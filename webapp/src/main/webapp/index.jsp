@@ -7,6 +7,11 @@
     <p> A Hello    -- welcome to my world </p>
     <p> Added new lines .</p>
     <p> Added new lines --Please fill in this form to create an account.</p>
+    <p> Added new lines --Please fill in this form to create an account.</p>
+    <p> Added new lines --Please fill in this form to create an account.</p>
+    <p> Line 3Added new lines --Please fill in this form to create an account.</p>
+    <p> Added Line 4  it is possible to refine the set of files that are being copied. This can be done with the includes, includesfile, excludes, excludesfile and defaultexcludes attributes. With the includes or includesfile attribute you specify the files you want to have included by using patterns. The exclude or excludesfile attribute is used to specify the files you want to have excluded. This is also done with patterns. And finally with the defaultexcludes attribute, you can specify whether you want to use default exclusions or not. See the section on directory based tasks, on how the inclusion/exclusion of files works, and how to write patterns. ew lines --Please fill in this form to create an account.</p>
+    <p> Added new lines --Please fill in this form to create an account.</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
