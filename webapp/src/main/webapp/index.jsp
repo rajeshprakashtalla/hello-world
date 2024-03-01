@@ -39,7 +39,9 @@
   <div class="container signin">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
-  <p> Line iEnd Lines --Please fill in this form to create an account.</p>
+  <p> Line 1st  End Lines --Please fill in this form to create an account.</p>
+  <p> Line 2 nd End Lines --Please fill in this form to create an account.</p>
+
 
   
 </form>
