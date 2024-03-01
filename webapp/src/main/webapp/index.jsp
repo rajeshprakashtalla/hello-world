@@ -39,7 +39,7 @@
   <div class="container signin">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
-
+  <p> Line iEnd Lines --Please fill in this form to create an account.</p>
 
   
 </form>
