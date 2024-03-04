@@ -30,3 +30,6 @@
     command : kubectl rollout restart deployment.v1.apps/valaxy-regapp
     become: false
 
+  - name : port forwarding in minikube
+    command : nohup sh /u01/projects/portforward.sh &
+    become: false
