@@ -1,0 +1,32 @@
+---
+- hosts: docker_hosts
+  become: yes
+
+  tasks:
+  - name : create docker image
+    command: docker build -t regapp:latest .
+    args:
+     chdir: /u01/projects/proj3
+
+  - name : create tag to push image into dockerhub
+    command : docker tag regapp:latest rajeshtalla0209/regapp:latest
+
+  - name : push docker image to dockerhub
+    command : docker push rajeshtalla0209/regapp:latest
+
+  - name : deploy service to kubernetes
+    command : kubectl apply -f regapp-service.yaml
+    become: false
+    args:
+      chdir: /u01/projects/proj3
+
+  - name : deploy deployment to kubernetes
+    command : kubectl apply -f regapp-deploy.yaml
+    become: false
+    args:
+     chdir: /u01/projects/proj3
+
+  - name : update deployments to new pods if image updated in dockerhub
+    command : kubectl rollout restart deployment.v1.apps/valaxy-regapp
+    become: false
+
